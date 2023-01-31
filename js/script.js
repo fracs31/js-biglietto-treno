@@ -8,12 +8,12 @@ let finalPrice; //prezzo finale
 //Se l'utente è minorenne
 if (age < 18) {
     finalPrice = price * km; //calcolo il prezzo completo
-    finalPrice = finalPrice - (finalPrice * discount20); //calcolo il prezzo con lo sconto
+    finalPrice = parseFloat(finalPrice - (finalPrice * discount20)).toFixed(2); //calcolo il prezzo con lo sconto e arrotondo
 } else if (age > 65) { //se l'utente è sopra i 65 anni
     finalPrice = price * km; //calcolo il prezzo completo
-    finalPrice = finalPrice - (finalPrice * discount40); //calcolo il prezzo con lo sconto
+    finalPrice = parseFloat(finalPrice - (finalPrice * discount40)).toFixed(2); //calcolo il prezzo con lo sconto e arrotondo
 } else { //altrimenti
-    finalPrice = price * km; //calcolo il prezzo finale
+    finalPrice = parseFloat(price * km).toFixed(2); //calcolo il prezzo finale e arrotondo
 }
 
 //Stampa in console
