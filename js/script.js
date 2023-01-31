@@ -13,10 +13,7 @@ let finalPrice; //prezzo finale
 if (age < 18) {
     standardPrice = parseFloat(price * km).toFixed(2); //calcolo il prezzo completo
     finalPrice = parseFloat(standardPrice - (standardPrice * discount20)).toFixed(2); //calcolo il prezzo con lo sconto e arrotondo
-<<<<<<< HEAD
     discountAdd = "20%"; //sconto applicato
-=======
->>>>>>> 574b595eb65e079a1ef142af3efb891ca837aca3
 } else if (age > 65) { //se l'utente è sopra i 65 anni
     standardPrice = parseFloat(price * km).toFixed(2); //calcolo il prezzo completo
     finalPrice = parseFloat(standardPrice - (standardPrice * discount40)).toFixed(2); //calcolo il prezzo con lo sconto e arrotondo
